@@ -1,54 +1,66 @@
-# ILCX H-grade Specification v1.0
+# ILCX H-grade Specification v1.1
 
-# ILCX H-grade 규격 v1.0
+# ILCX H-grade 규격 v1.1
 
 ## 1. Purpose
 
-ILCX H-grade expresses the weighted amount of substantive human contribution in an AI-assisted project.
+ILCX H-grade is a branding label that discloses which weighted parts of an AI-assisted project were substantively performed by humans.
 
-ILCX H-grade는 AI 보조 프로젝트에서 인간이 실질적으로 관여한 정도를 가중치 기반으로 표현합니다.
+ILCX H-grade는 AI 보조 프로젝트에서 어떤 가중치 영역을 사람이 실질적으로 수행했는지 표시하는 브랜딩 라벨입니다.
 
-It does not measure artistic quality, technical quality, originality, commercial value, or moral value.
+It is not a quality score, scientific measurement, percentage estimate, or artistic ranking.
 
-예술성, 기술적 품질, 독창성, 상업적 가치, 도덕적 가치를 측정하는 지표는 아닙니다.
+품질 점수, 과학적 측정치, 실제 비율 추정치, 작품성 등급이 아닙니다.
 
-## 2. Scoring model
+## 2. Binary scoring model
 
-## 2. 점수 체계
+## 2. 이진 점수 체계
 
-Each category may receive an integer score from `0` through its category maximum.
+Every category is binary. A category receives either its full weight or zero.
 
-각 항목은 `0`점부터 해당 항목의 최대 점수까지 정수 점수를 부여할 수 있습니다.
+모든 항목은 이진 판정합니다. 각 항목은 정해진 전체 점수 또는 0점만 받을 수 있습니다.
 
-Partial credit is allowed when work was genuinely mixed between human and AI contribution. Credit should reflect **substantive authorship, decision-making, execution, checking, and revision**, not merely elapsed time.
+- If the human substantively performed the category: award the full category weight.
+- If the human did not substantively perform the category: award 0.
+- Partial scores are forbidden.
 
-사람과 AI의 기여가 실제로 혼합된 경우 부분 점수를 줄 수 있습니다. 점수는 단순 작업 시간이 아니라 **실질적인 작성, 판단, 실행, 검토, 수정**의 정도를 기준으로 합니다.
+- 사람이 해당 영역을 실질적으로 수행했다면: 해당 항목의 전체 점수를 부여합니다.
+- 사람이 해당 영역을 실질적으로 수행하지 않았다면: 0점을 부여합니다.
+- 부분 점수는 금지합니다.
 
-| ID | Category | Maximum |
+Scores such as `8/10`, `3/5`, or `4/15` are invalid under this specification.
+
+`8/10`, `3/5`, `4/15` 같은 점수는 이 규격에서 유효하지 않습니다.
+
+AI assistance does not automatically invalidate a category. The question is whether the human substantively performed that category. Promotion is the special exception defined below.
+
+AI의 보조가 있었다는 이유만으로 해당 항목이 자동으로 0점이 되지는 않습니다. 핵심 질문은 사람이 그 영역을 실질적으로 수행했는가입니다. 단, 홍보 항목은 아래 특별 규칙을 따릅니다.
+
+| ID | Category | Allowed scores |
 |---|---|---:|
-| A | Idea draft | 10 |
-| B | Concept development | 10 |
-| C | Implementation skeleton | 10 |
-| D | Design idea | 10 |
-| E | Design realization | 10 |
-| F | Experience realization | 10 |
-| G | Compatibility check | 5 |
-| H | Functional testing | 5 |
-| I | Promotion | 15 |
-| J | Optimization | 15 |
+| A | Idea draft | 0 or 10 |
+| B | Concept development | 0 or 10 |
+| C | Implementation skeleton | 0 or 10 |
+| D | Design idea | 0 or 10 |
+| E | Design realization | 0 or 10 |
+| F | Experience realization | 0 or 10 |
+| G | Compatibility check | 0 or 5 |
+| H | Functional testing | 0 or 5 |
+| I | Promotion | 0 or 15 |
+| J | Optimization | 0 or 15 |
 
-| ID | 항목 | 최대 점수 |
+| ID | 항목 | 허용 점수 |
 |---|---|---:|
-| A | 아이디어 초안 | 10 |
-| B | 콘셉트 구체화 | 10 |
-| C | 구현 뼈대 | 10 |
-| D | 디자인 아이디어 | 10 |
-| E | 디자인 작성(실현) | 10 |
-| F | 경험 작성(실현) | 10 |
-| G | 호환성 점검 | 5 |
-| H | 작동 테스트 | 5 |
-| I | 홍보 | 15 |
-| J | 최적화 | 15 |
+| A | 아이디어 초안 | 0 또는 10 |
+| B | 콘셉트 구체화 | 0 또는 10 |
+| C | 구현 뼈대 | 0 또는 10 |
+| D | 디자인 아이디어 | 0 또는 10 |
+| E | 디자인 작성(실현) | 0 또는 10 |
+| F | 경험 작성(실현) | 0 또는 10 |
+| G | 호환성 점검 | 0 또는 5 |
+| H | 작동 테스트 | 0 또는 5 |
+| I | 홍보 | 0 또는 15 |
+| J | 최적화 | 0 또는 15 |
 
 Total maximum: **100**.
 
@@ -58,17 +70,17 @@ Total maximum: **100**.
 
 ## 3. 홍보 항목 특별 규칙
 
-Category I receives 15 points only when promotional **image, video, audio, and hologram media** contain no AI intervention.
+Promotion receives 15 points only when promotional **image, video, audio, and hologram media** contain no AI intervention.
 
-I 항목인 홍보는 홍보용 **이미지, 비디오, 오디오, 홀로그램 미디어에 AI 개입이 전혀 없는 경우에만 15점**을 받습니다.
+홍보는 홍보용 **이미지, 비디오, 오디오, 홀로그램 미디어에 AI 개입이 전혀 없는 경우에만 15점**을 받습니다.
 
-If no promotion exists, the category may receive the full 15 points because no AI intervention occurred in promotional media.
+If no promotion exists, Promotion may still receive 15 points because no AI intervention occurred in promotional media.
 
 홍보 자체가 존재하지 않는 경우에도 홍보 미디어에 AI가 개입하지 않은 것으로 간주하여 15점을 부여할 수 있습니다.
 
-If AI intervention exists in any covered promotional medium, Category I receives 0 points.
+If AI intervention exists in any covered promotional medium, Promotion receives 0 points.
 
-위에 포함된 홍보 미디어 중 어느 하나라도 AI가 개입했다면 I 항목은 0점입니다.
+위 홍보 미디어 중 어느 하나라도 AI가 개입했다면 홍보 항목은 0점입니다.
 
 ## 4. Conversion
 
@@ -94,49 +106,22 @@ Canonical form:
 
 `ILCX {H}H{optional +} grade`
 
-Examples:
-
-예시:
-
-- 44 -> `ILCX 4H grade`
-- 45 -> `ILCX 4H+ grade`
-- 99 -> `ILCX 9H+ grade`
-- 100 -> `ILCX 10H grade`
-
 ## 5. Evidence and uncertainty
 
 ## 5. 근거와 불확실성
 
-A score should not credit human contribution that is not documented or reasonably established.
+Do not split the difference when evidence is ambiguous. Decide the category as yes or no from the available evidence.
 
-기록되거나 합리적으로 확인되지 않은 인간 기여도를 임의로 인정해서는 안 됩니다.
+근거가 애매하다고 중간 점수를 주지 않습니다. 확인 가능한 근거를 바탕으로 해당 항목을 예 또는 아니오로 판정합니다.
 
-When the available history is incomplete, the label may be marked **provisional** in explanatory text, while the canonical grade string itself remains unchanged.
+If there is not enough evidence to establish that the human substantively performed a category, award 0 for that category and the explanatory text may mark the overall result as provisional.
 
-작업 이력이 불완전하다면 설명문에서 해당 등급을 **provisional(잠정)**이라고 표시할 수 있습니다. 단, 표준 등급 문자열 자체는 변경하지 않습니다.
+사람이 해당 영역을 실질적으로 수행했다고 확인할 근거가 부족하다면 그 항목은 0점으로 처리하고, 필요하면 전체 결과를 설명문에서 잠정 등급으로 표시할 수 있습니다.
 
 ## 6. Interpretation
 
 ## 6. 해석
 
-The score is a weighted contribution index. It is not a literal percentage of pixels, tokens, code lines, or labor hours made by humans.
+The final score is the sum of fixed category weights that passed a binary human-performance check. It is not a literal percentage of pixels, tokens, code lines, labor hours, or authorship.
 
-이 점수는 가중치 기반 기여도 지표입니다. 사람이 만든 픽셀, 토큰, 코드 줄 수, 작업 시간의 실제 비율을 뜻하지 않습니다.
-
-## 7. Recommended disclosure
-
-## 7. 권장 표기 방식
-
-When space allows, publish both:
-
-가능하면 다음 두 가지를 함께 표시하는 것을 권장합니다.
-
-- the canonical grade, and
-- a short category breakdown.
-
-- 표준 등급
-- 간단한 항목별 점수 내역
-
-This makes the label auditable without turning it into a long certification report.
-
-이를 통해 지나치게 긴 인증 보고서 없이도 라벨의 근거를 확인할 수 있습니다.
+최종 점수는 사람 수행 여부를 이진 판정해 통과한 항목의 고정 가중치를 합산한 값입니다. 사람이 만든 픽셀, 토큰, 코드 줄, 작업 시간, 저작 비율의 실제 퍼센트가 아닙니다.
