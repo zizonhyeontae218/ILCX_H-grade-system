@@ -1,16 +1,16 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ilcx-h-grade",
-  "version": "1.0.0",
-  "description": "Score and label human contribution in AI-assisted projects using the ILCX H-grade rubric.",
+  "version": "1.1.0",
+  "description": "Apply the binary ILCX H-grade branding label to AI-assisted projects: each category is either fully credited to human participation or scored zero.",
   "author": {
     "name": "kCHT"
   },
   "keywords": [
     "ai-assisted",
     "human-contribution",
-    "label",
-    "grading",
+    "branding-label",
+    "binary-grading",
     "ilcx"
   ]
 }
