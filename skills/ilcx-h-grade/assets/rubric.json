@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "ILCX H-grade",
+  "maximum_total": 100,
+  "categories": [
+    {"id":"idea_draft","label":"Idea draft","max":10},
+    {"id":"concept_development","label":"Concept development","max":10},
+    {"id":"implementation_skeleton","label":"Implementation skeleton","max":10},
+    {"id":"design_idea","label":"Design idea","max":10},
+    {"id":"design_realization","label":"Design realization","max":10},
+    {"id":"experience_realization","label":"Experience realization","max":10},
+    {"id":"compatibility_check","label":"Compatibility check","max":5},
+    {"id":"functional_testing","label":"Functional testing","max":5},
+    {"id":"promotion","label":"Promotion","max":15,"special_rule":"15 only if no AI intervention in promotional image/video/audio/hologram media; no promotion may receive 15; otherwise 0."},
+    {"id":"optimization","label":"Optimization","max":15}
+  ],
+  "grade_rule": {
+    "base":"floor(total/10)",
+    "plus":"total % 10 >= 5",
+    "canonical":"ILCX {base}H{plus} grade",
+    "score_100":"ILCX 10H grade"
+  }
+}
