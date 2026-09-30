@@ -1,8 +1,8 @@
-# ILCX H-grade
+# ILCX™ H-grade
 
-**ILCX H-grade** is a human-contribution branding label for AI-assisted works.
+**ILCX™ H-grade** is a human-contribution branding label for AI-assisted works.
 
-**ILCX H-grade**는 AI 보조 결과물에서 인간의 개입 영역을 표현하기 위한 브랜딩 라벨입니다.
+**ILCX™ H-grade**는 AI 보조 결과물에서 인간의 개입 영역을 표현하기 위한 브랜딩 라벨입니다.
 
 It uses a weighted 100-point rubric, but every category is judged strictly as **yes or no**: if the human substantively performed that category, the full weight is awarded; otherwise it receives 0.
 
@@ -16,7 +16,7 @@ Example:
 
 예시:
 
-> **ILCX 4H+ grade**
+> **ILCX™ 4H+ grade**
 
 This is a branding/contribution label, **not a quality score**, scientific measurement, anti-AI score, or claim that a work is fully human-made.
 
@@ -82,9 +82,9 @@ Let `S` be the total score from 0 to 100.
 - 일의 자리 점수가 5 이상이면 `+` 추가
 - `100`점은 `10H+`가 아니라 `10H`로 표기
 
-## Example: ILCX - CometDust
+## Example: ILCX™ - CometDust
 
-## 예시: ILCX - CometDust
+## 예시: ILCX™ - CometDust
 
 Human-performed categories:
 
@@ -110,9 +110,9 @@ Total: **45 / 100**
 
 총점: **45 / 100**
 
-Result: **ILCX 4H+ grade**
+Result: **ILCX™ 4H+ grade**
 
-결과: **ILCX 4H+ grade**
+결과: **ILCX™ 4H+ grade**
 
 ## Repository contents
 
@@ -134,6 +134,6 @@ Version: **1.1.0**
 
 버전: **1.1.0**
 
-“ILCX H-grade” is used here as a project labeling mark. This repository does not by itself assert or prove legal trademark registration.
+“ILCX™ H-grade” is used here as a project labeling mark. The ™ symbol denotes branding use and does not by itself assert or prove legal trademark registration.
 
-“ILCX H-grade”는 프로젝트 브랜딩 및 표기를 위한 라벨로 사용됩니다. 이 저장소의 존재 자체가 법적 상표 등록이나 공식 인증을 의미하지는 않습니다.
+“ILCX™ H-grade”는 프로젝트 브랜딩 및 표기를 위한 라벨로 사용됩니다. ™ 기호는 브랜딩 표기이며, 이 저장소의 존재 자체가 법적 상표 등록이나 공식 인증을 의미하지는 않습니다.
